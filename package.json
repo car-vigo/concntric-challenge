@@ -6,6 +6,9 @@
   },
   "scripts": {
     "cy:open": "cypress open",
-    "cy:run": "npx cypress run --reporter mochawesome"
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "test": "cypress run",
+    "test:report": "cypress run && echo '\nOpen report: cypress/reports/html/index.html'"
   }
 }
