@@ -7,7 +7,7 @@ export default defineConfig({
       // implement node event listeners here
       require('cypress-mochawesome-reporter/plugin')(on);
     },
-    // baseUrl: process.env.CYPRESS_HOST || 'https://concntric.com/',
+    baseUrl: process.env.CYPRESS_HOST,
     viewportWidth: 1920,
     viewportHeight: 1080,
     defaultCommandTimeout: 10000,

@@ -1,13 +1,9 @@
 export class BasePage {
-  protected baseURL: string;
+
   
-  constructor() {
-    this.baseURL = Cypress.env('HOST');
-  }
-  
-  navigateTo(url: string): void {
-    const fullUrl = url.startsWith('http') ? url : `${this.baseURL}${url}`;
-    cy.visit(fullUrl);
+  navigateTo(path: string): void {
+    
+    cy.visit(path);
   }
   
   getPageTitle() {

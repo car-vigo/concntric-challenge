@@ -1,5 +1,4 @@
 import { BasePage } from './BasePage';
-const HOST = Cypress.env('host');
 export class HomePage extends BasePage {
   // Hero section
   heroHeadline() { 
@@ -99,7 +98,7 @@ export class HomePage extends BasePage {
   
   // Methods
   navigateToHome(): void {
-    this.navigateTo(`${HOST}/`);
+    this.navigateTo('/');
   }
   
   clickBookDemo(): void {
