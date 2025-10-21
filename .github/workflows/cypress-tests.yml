@@ -10,6 +10,7 @@ on:
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
+    environment: PROD  # Usa el ambiente PROD con sus variables
     
     steps:
       - name: Checkout code
