@@ -2,7 +2,7 @@ export class BasePage {
   protected baseURL: string;
   
   constructor() {
-    this.baseURL = Cypress.env('host') || 'https://concntric.com/';
+    this.baseURL = Cypress.env('HOST');
   }
   
   navigateTo(url: string): void {
